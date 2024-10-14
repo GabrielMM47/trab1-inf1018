@@ -1,0 +1,20 @@
+Relatório do Trabalho 1
+
+Integrantes do Grupo:
+- Leo Klinger Svartman (2310862) - 3WC
+- Gabriel Martins Mendes (2311271) - 3WC
+
+Funcionando corretamente:
+
+1) Conversão de UTF-8 para UTF-32:
+- A função de conversão de UTF-8 para UTF-32 está funcionando corretamente para caracteres ASCII (1 byte) e para caracteres com múltiplos bytes em UTF-8 (2, 3 e 4 bytes).
+- O Byte Order Mark (BOM) está sendo corretamente inserido no arquivo de saída em UTF-32, o que indica que a codificação está em little-endian.
+- O arquivo de saída foi gerado como o esperado.
+
+2) Conversão de UTF-32 para UTF-8:
+- A função de conversão de UTF-32 para UTF-8 também está funcionando corretamente, convertendo corretamente os caracteres UTF-32 para suas respectivas representações em UTF-8.
+- A função suporta tanto arquivos little-endian quanto big-endian, identificando corretamente o BOM e ajustando a leitura conforme necessário.
+- O arquivo de saída em UTF-8 após a conversão é válido e de acordo com o esperado.
+
+Funcionalidades que ainda precisam ser corrigidas:
+- Não foram identificados problemas críticos durante os testes. Utilizamos uma main com testes para as duas funções de conversão e não encontramos nenhum problema.
